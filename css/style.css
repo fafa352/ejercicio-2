@@ -4,6 +4,7 @@
         }
         body {
             background-color: whitesmoke;
+            width: 100%2;
         }
         nav ul {
             list-style: none;
@@ -58,27 +59,38 @@
         }
         .hover-text:hover .text {
             visibility: visible;
-            
         }
-        .triangle-wrapper {
-            position: relative;
-            width: 100%;
-
-        }
-        
-        .triangle-image {
-            
-            width: 100%;
-            height: auto;
-            clip-path: polygon(0 100%, 100% 0, 0 0);
-        }
-        
-        .triangle-text {
-            width: 100%; 
-            height: 100%; 
-            box-sizing: border-box;
-            margin-left: 70%;
-        }
+.triangle-wrapper {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+position: relative;
+}
+.triangle-image {
+width: 100%;
+height: auto;
+clip-path: polygon(0 100%, 100% 0, 0 0);
+}
+.triangle-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+}
+@media(min-width: 768px) {
+.triangle-wrapper {
+flex-wrap: nowrap;
+}
+.triangle-image {
+    width: 60%;
+    clip-path: polygon(0 100%, 100% 0, 0 0);
+}
+.triangle-text {
+    width: 40%;
+}          
+}
         footer {
             margin-top: 20px;
             padding: 20px 0;
