@@ -103,3 +103,19 @@
         footer .list-unstyled a:hover {
             text-decoration: underline;
         }
+        .celeste{
+            background-color:#75AADB ;
+        }
+        .blanco{
+            background-color:#FFFF ;
+        }
+        .grisclaro{
+            background-color: #003366;
+        }
+        .azulmarino{
+            background-color: #003366;
+            color: #FFD700;
+        }
+        .dorado{
+            background-color: #FFD700;
+        }
